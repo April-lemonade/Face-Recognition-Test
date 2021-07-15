@@ -1,0 +1,12 @@
+<!--pages/progress/progress.wxml-->
+<view>
+  <view>
+    <mp-searchbar bindselectresult="selectResult" search="{{search}}"></mp-searchbar>
+  </view>
+  <mp-cells>
+    <mp-cell link url="../../pages/progressdetail/progressdetail" hover value="测试任务1" footer="100001">
+      <image slot="title" src="{{icon}}" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;">
+      </image>
+    </mp-cell>
+  </mp-cells>
+</view>

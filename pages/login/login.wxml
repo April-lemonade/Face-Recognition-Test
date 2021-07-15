@@ -1,0 +1,26 @@
+<!--pages/home/home.wxml-->
+<view>
+  <view>
+    <image style="height:500rpx;width:800rpx" src="../../image/bg.jpg" />
+  </view>
+  <view>
+    <view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
+      <view class="page__bd">
+        <mp-form id="form" rules="{{rules}}" models="{{formData}}">
+          <mp-cells>
+            <mp-cell prop="用户名" title="用户名" ext-class="">
+              <input bindinput="formInputChange" data-field="username" class="weui-input" placeholder="请输入用户名" />
+            </mp-cell>
+            <mp-cell prop="密码" title="密码" ext-class="">
+              <input type="password" bindinput="formInputChange" data-field="pwd" class="weui-input"
+                placeholder="请输入密码" />
+            </mp-cell>
+          </mp-cells>
+        </mp-form>
+        <view class="weui-btn-area">
+          <button class="weui-btn" type="primary" bindtap="submitForm">登录</button>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

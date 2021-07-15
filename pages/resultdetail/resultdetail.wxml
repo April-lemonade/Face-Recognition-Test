@@ -1,0 +1,28 @@
+<!--pages/resultdetail/resultdetail.wxml-->
+<view>
+  <mp-cells ext-class="my-cells">
+    <mp-cell value="任务ID" footer="说明文字"></mp-cell>
+    <mp-cell value="任务名称" footer="说明文字"></mp-cell>
+    <mp-cell value="测试集ID" footer="说明文字"></mp-cell>
+    <mp-cell value="测试集名称" footer="说明文字"></mp-cell>
+    <mp-cell value="任务详细描述" footer="说明文字"></mp-cell>
+    <mp-cell value="任务结果"></mp-cell>
+  </mp-cells>
+  <view>
+    <text style="margin-left:5%;fontsize:15rpx;font-weight:bold">基础图表</text>
+  </view>
+  <view class="move-container">
+    <ec-canvas id="mychart-dom-move-bar" canvas-id="mychart-move-bar" ec="{{ ecLine1 }}"></ec-canvas>
+    <ec-canvas id="mychart-dom-move-bar" canvas-id="mychart-move-bar" ec="{{ ecLine2 }}"></ec-canvas>
+    <ec-canvas id="mychart-dom-move-bar" canvas-id="mychart-move-bar" ec="{{ ecLine3 }}"></ec-canvas>
+  </view>
+  <view>
+    <text style="margin-left:5%;fontsize:15rpx;font-weight:bold">详细图表</text>
+  </view>
+  <view class="move-container">
+    <ec-canvas id="mychart-dom-move-bar" canvas-id="mychart-move-bar" ec="{{ ecHeat1 }}"></ec-canvas>
+    <ec-canvas id="mychart-dom-move-bar" canvas-id="mychart-move-bar" ec="{{ ecHeat2 }}"></ec-canvas>
+    <ec-canvas id="mychart-dom-move-bar" canvas-id="mychart-move-bar" ec="{{ ecHeat3 }}"></ec-canvas>
+    <ec-canvas id="mychart-dom-move-bar" canvas-id="mychart-move-bar" ec="{{ ecHeat4 }}"></ec-canvas>
+  </view>
+</view>

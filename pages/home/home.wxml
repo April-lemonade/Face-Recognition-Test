@@ -1,0 +1,20 @@
+<!--pages/home/home.wxml-->
+<view>
+  <view>
+    <image style="height:500rpx;width:800rpx" src="../../image/bg.jpg" />
+  </view>
+  <view bindtap="enterprogress" class="bg">
+    <image style="height:150rpx;width:150rpx;margin:5%" src="../../image/progress1.png" />
+    <view class="detail">
+      <text class="title">测试进度</text>
+      <text class="content">查看正在进行中的任务的测试进度</text>
+    </view>
+  </view>
+  <view bindtap="enterresult" class="bg">
+    <image style="height:150rpx;width:150rpx;margin:5%" src="../../image/graph1.png" />
+    <view class="detail">
+      <text class="title">测试结果</text>
+      <text class="content">查看已经完成的任务的测试结果</text>
+    </view>
+  </view>
+</view>

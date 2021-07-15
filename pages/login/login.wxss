@@ -1,0 +1,22 @@
+/* pages/home/home.wxss */
+
+.hint {
+  width: 100%;
+  text-align: left;
+  font-size: 30rpx;
+}
+
+.login_button{
+background-color: #544cff;
+color: #fff;
+}
+
+.green-btn{
+  background-color: #5cadff;
+  color:#fff;
+  }
+
+  .green-hover-class{
+    background-color: #2d8cf0;
+    color:#fff;
+    }

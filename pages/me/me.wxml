@@ -1,0 +1,18 @@
+<!--pages/me/me.wxml-->
+<view>
+  <view style="display:flex;flex-direction: column;">
+    <image style="height:500rpx;width:800rpx;position:absolute;z-index:-1" src="../../image/bg.jpg" />
+    <view style="position:absolute;z-index:0;width:750rpx">
+      <view class="bg">
+        <image style="height:150rpx;width:150rpx;margin:5%" src="../../image/graph1.png" />
+        <view class="detail">
+          <text class="title">用户名</text>
+          <text class="content">151****2499</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view style="margin-top:800rpx">
+    <button bindtap="quit" type="warn">退出登录</button>
+  </view>
+</view>
