@@ -1,11 +1,11 @@
 <!--pages/progressdetail/progressdetail.wxml-->
 <view>
   <mp-cells ext-class="my-cells">
-    <mp-cell value="任务ID" footer="说明文字"></mp-cell>
-    <mp-cell value="任务名称" footer="说明文字"></mp-cell>
-    <mp-cell value="测试集ID" footer="说明文字"></mp-cell>
-    <mp-cell value="测试集名称" footer="说明文字"></mp-cell>
-    <mp-cell value="任务详细描述" footer="说明文字"></mp-cell>
+    <mp-cell value="任务ID" footer="100001"></mp-cell>
+    <mp-cell value="任务名称" footer="测试任务1"></mp-cell>
+    <mp-cell value="测试集ID" footer="000001"></mp-cell>
+    <mp-cell value="测试集名称" footer="测试集1"></mp-cell>
+    <mp-cell value="任务详细描述" footer="this is a test"></mp-cell>
     <mp-cell value="任务进度"></mp-cell>
   </mp-cells>
   <view class="container">

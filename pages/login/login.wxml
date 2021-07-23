@@ -9,10 +9,10 @@
         <mp-form id="form" rules="{{rules}}" models="{{formData}}">
           <mp-cells>
             <mp-cell prop="用户名" title="用户名" ext-class="">
-              <input bindinput="formInputChange" data-field="username" class="weui-input" placeholder="请输入用户名" />
+              <input bindinput="userNameInput" data-field="username" class="weui-input" placeholder="请输入用户名" />
             </mp-cell>
             <mp-cell prop="密码" title="密码" ext-class="">
-              <input type="password" bindinput="formInputChange" data-field="pwd" class="weui-input"
+              <input type="password" bindinput="pwdInput" data-field="pwd" class="weui-input"
                 placeholder="请输入密码" />
             </mp-cell>
           </mp-cells>

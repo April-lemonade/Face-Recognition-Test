@@ -2,13 +2,14 @@
   "pages": [
     "pages/login/login",
     "pages/resultdetail/resultdetail",
+    "pages/me/me",
+    "pages/index/index",
     "pages/result/result",
     "pages/progressdetail/progressdetail",
     "pages/progress/progress",
     "pages/home/home",
-    "pages/me/me",
-    "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/fullphoto/fullphoto"
   ],
   "window": {
     "backgroundTextStyle": "light",
