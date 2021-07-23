@@ -14,12 +14,14 @@
 .move-container {
   width: 100%;
   min-height: 500px;
+  background-color: white;
 }
 
-#mychart-dom-move-bar {
+#mychart-dom-move-bar,#line1,#line2,#line3,#line4,#heat1,#heat2,#heat3,#line5 {
   width: 100%;
   height: 500px;
   display: block;
+  background-color: white;
 }
 
 .move-container .text {
@@ -32,8 +34,17 @@
 }
 
 .title{
+  justify-items: center;
+  margin-left:15%;
+  margin-top:5%;
+  display: flex;
+  flex-direction: row;
+}
+
+.title_text{
   text-align: center;
+  margin-right:5%;
   margin-left:5%;
   font-size:30rpx;
-  font-weight:bold
+  font-weight:bold;
 }

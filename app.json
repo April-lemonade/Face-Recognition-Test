@@ -8,8 +8,7 @@
     "pages/progressdetail/progressdetail",
     "pages/progress/progress",
     "pages/home/home",
-    "pages/logs/logs",
-    "pages/fullphoto/fullphoto"
+    "pages/logs/logs"
   ],
   "window": {
     "backgroundTextStyle": "light",

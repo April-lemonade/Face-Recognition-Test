@@ -12,24 +12,48 @@
     <text style="margin-left:5%;fontsize:15rpx;font-weight:bold">基础图表</text>
   </view>
   <view class="move-container">
-    <view class="title">拒识率/误识率与阈值设定的关系</view>
-    <ec-canvas id="mychart-dom-move-bar" canvas-id="mychart-move-bar" ec="{{ ecLine1 }}"></ec-canvas>
-    <view class="title">ROC曲线</view>
-    <ec-canvas id="mychart-dom-move-bar" canvas-id="mychart-move-bar" ec="{{ ecLine2 }}"></ec-canvas>
+    <view class="title">
+      <view class="title_text">拒识率/误识率与阈值设定的关系</view>
+      <image bindtap="download" data-id='#line1' style="width:30rpx;height:30rpx;margin-left:5%" src="../../image/download.png" />
+    </view>
+    <ec-canvas id="line1"  canvas-id="mychart-move-bar" ec="{{ ecLine1 }}"></ec-canvas>
+    <view class="title">
+      <view style="margin-left:35%" class="title_text">ROC曲线</view>
+      <image bindtap="download" data-id='#line2' style="width:30rpx;height:30rpx;margin-left:25%" src="../../image/download.png" />
+    </view>
+    <ec-canvas id="line2" canvas-id="mychart-move-bar" ec="{{ ecLine2 }}"></ec-canvas>
     <text style="margin-left:5%;fontsize:15rpx;font-weight:bold">详细图表</text>
-    <view class="title">年龄对拒识率误识率的影响</view>
-    <ec-canvas id="mychart-dom-move-bar" canvas-id="mychart-move-bar" ec="{{ ecLine3 }}"></ec-canvas>
+    <view class="title">
+      <view style="margin-left:15%;margin-right:8%" class="title_text">年龄对拒识率误识率的影响</view>
+      <image bindtap="download" data-id='#line3' style="width:30rpx;height:30rpx;margin-left:5%" src="../../image/download.png" />
+    </view>
+    <ec-canvas id="line3" canvas-id="mychart-move-bar" ec="{{ ecLine3 }}"></ec-canvas>
   </view>
   <view class="move-container">
-    <view class="title">性别对拒识率/误识率的影响</view>
-    <ec-canvas id="mychart-dom-move-bar" canvas-id="mychart-move-bar" ec="{{ ecLine4 }}"></ec-canvas>
-    <view class="title">男性拒识率与国家年龄的关系</view>
-    <ec-canvas id="mychart-dom-move-bar" canvas-id="mychart-move-bar" ec="{{ ecHeat1 }}"></ec-canvas>
-    <view class="title">女性拒识率与国家年龄的关系</view>
-    <ec-canvas id="mychart-dom-move-bar" canvas-id="mychart-move-bar" ec="{{ ecHeat2 }}"></ec-canvas>
-    <view class="title">男性/女性误识率比值与国家年龄的关系</view>
-    <ec-canvas id="mychart-dom-move-bar" canvas-id="mychart-move-bar" ec="{{ ecHeat3 }}"></ec-canvas>
-    <view class="title">拒识率/误识率与图片量级的关系</view>
-    <ec-canvas id="mychart-dom-move-bar" canvas-id="mychart-move-bar" ec="{{ ecLine5 }}"></ec-canvas>
+    <view class="title">
+      <view style="margin-left:15%" class="title_text">性别对拒识率/误识率的影响</view>
+      <image bindtap="download" data-id='#line4' style="width:30rpx;height:30rpx;margin-left:5%" src="../../image/download.png" />
+    </view>
+    <ec-canvas id="line4" canvas-id="mychart-move-bar" ec="{{ ecLine4 }}"></ec-canvas>
+    <view class="title">
+      <view style="margin-left:15%" class="title_text">男性拒识率与国家年龄的关系</view>
+      <image bindtap="download" data-id='#heat1' style="width:30rpx;height:30rpx;margin-left:5%" src="../../image/download.png" />
+    </view>
+    <ec-canvas id="heat1" canvas-id="mychart-move-bar" ec="{{ ecHeat1 }}"></ec-canvas>
+    <view class="title">
+      <view style="margin-left:15%" class="title_text">女性拒识率与国家年龄的关系</view>
+      <image bindtap="download" data-id='#heat2' style="width:30rpx;height:30rpx;margin-left:5%" src="../../image/download.png" />
+    </view>
+    <ec-canvas id="heat2" canvas-id="mychart-move-bar" ec="{{ ecHeat2 }}"></ec-canvas>
+    <view class="title">
+      <view style="margin-left:5%;margin-right:0" class="title_text">男性/女性误识率比值与国家年龄的关系</view>
+      <image bindtap="download" data-id='#heat3' style="width:30rpx;height:30rpx;margin-left:2%" src="../../image/download.png" />
+    </view>
+    <ec-canvas id="heat3" canvas-id="mychart-move-bar" ec="{{ ecHeat3 }}"></ec-canvas>
+    <view class="title">
+      <view style="margin-left:5%" class="title_text">拒识率/误识率与图片量级的关系</view>
+      <image bindtap="download" data-id='#line5' style="width:30rpx;height:30rpx;margin-left:5%" src="../../image/download.png" />
+    </view>
+    <ec-canvas id="line5" canvas-id="mychart-move-bar" ec="{{ ecLine5 }}"></ec-canvas>
   </view>
 </view>

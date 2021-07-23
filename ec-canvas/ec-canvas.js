@@ -188,7 +188,7 @@ Component({
         if (!opt.canvasId) {
           opt.canvasId = this.data.canvasId;
         }
-        ctx.draw(true, () => {
+        ctx.draw(false, () => {
           wx.canvasToTempFilePath(opt, this);
         });
       }

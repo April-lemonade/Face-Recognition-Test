@@ -10,6 +10,12 @@ function initChart1(canvas, width, height, dpr) {
   canvas.setChart(chart);
 
   var option = {
+    toolbox:{
+      show: true,
+      feature: {
+          magicType: {type: ['line', 'bar']},
+      }
+    },
     legend: {
       data: ['拒识率', '误识率'],
       top: 40,
@@ -105,6 +111,12 @@ function initChart2(canvas, width, height, dpr) {
   canvas.setChart(chart);
 
   var option = {
+    toolbox:{
+      show: true,
+      feature: {
+          magicType: {type: ['line', 'bar']},
+      }
+    },
     grid: {
       containLabel: true
     },
@@ -185,6 +197,12 @@ function initChart3(canvas, width, height, dpr) {
   canvas.setChart(chart);
 
   var option = {
+    toolbox:{
+      show: true,
+      feature: {
+          magicType: {type: ['line', 'bar']},
+      }
+    },
     legend: {
       data: ['拒识率', '误识率'],
       top: 40,
@@ -282,9 +300,15 @@ function initChart4(canvas, width, height, dpr) {
   canvas.setChart(chart);
 
   var option = {
+    toolbox:{
+      show: true,
+      feature: {
+          magicType: {type: ['line', 'bar']},
+      }
+    },
     legend: {
       data: ['男性拒识率', '男性误识率','', '女性拒识率', '女性误识率'],
-      right: 30,
+      right: 50,
       //left: 'center',
       z: 100
     },
@@ -741,6 +765,12 @@ function initChart8(canvas, width, height, dpr) {
   canvas.setChart(chart);
 
   var option = {
+    toolbox:{
+      show: true,
+      feature: {
+          magicType: {type: ['line', 'bar']},
+      }
+    },
     legend: {
       data: ['拒识率', '误识率'],
       top: 40,
@@ -854,9 +884,7 @@ Page({
     },
     ecLine5: {
       onInit: initChart8
-    },
-    test: '123',
-    option: null
+    }
   },
   onLoad() {
     wx.request({
@@ -870,5 +898,27 @@ Page({
       }
     })
   },
-  onReady() {}
+  onReady() {},
+  download(e) {
+    const ecComponent = this.selectComponent(e.currentTarget.dataset.id);
+
+     // 先保存图片到临时的本地文件，然后存入系统相册
+    ecComponent.canvasToTempFilePath({
+      success: res => {
+        console.log("tempFilePath:", res.tempFilePath)
+
+        // 存入系统相册
+        wx.saveImageToPhotosAlbum({
+          filePath: res.tempFilePath || '',
+          success: res => {
+            console.log("success", res)
+          },
+          fail: res => {
+            console.log("fail", res)
+          }
+        })
+      },
+      fail: res => console.log(res)
+    });
+  }
 });
